@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin:0px;
+    background-color: #ebebeb;
+  
+}
+
+
+header {
+    background-color: #EAC926;
+}
+
+
+main {
+    text-align:center;
+    width:90%;
+    margin:10px;
+    
+    
+}
+
+footer {
+    text-align: center;
+    font-size: 2em;
+}
+
+.paratablet {
+    display: block;
+}
+
+.cuerpo {
+    font-size: 12px;
+}
+
+.titulares {
+    font-size: 24px;
+}
+
+.precios {
+    font-size: 28px;
+    color: #39b54a;
+}
+
+.descuentos {
+    font-size: 16px;
+}
+
+.descripciones {
+    font-size: 16px;
+    display:none;
+}
+
+.menu-icon {
+    width: 17px;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .burger-menu {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3f51b5;
+    border-radius: 15%;
+  }
+  
+    
+
+
+.fa-solid {
+
+margin: 10px;
+}
+
+.boton {
+    font-size: 10px;
+    
+}
+
+.buttom {
+    text-align: left;
+}
+
+.anuncio {
+    text-align: center;
+
+}
+
+
+.Cafetera,
+.Samsung,
+.Tv,
+.Mac {
+    border-top: solid 1px #ebebeb;
+    padding:15px;
+    
+}
+
+@media (min-width:361px) {
+    .articulos{
+        background-color: white;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .descripciones {
+        display:block;
+    }
+
+}
+
+
+
+
+@media (min-width: 769px) {
+    .articulos{
+    background-color:white;
+}
+.burger-menu {
+    display:none;
+}
+}
+
+.banner {
+    margin:0px;
+}
+
+
+
+.ofertas,
+.tienda,
+.vender,
+.ayuda,
+.cuenta,
+.ingresa,
+.compras {
+    margin:10px;
+    margin-bottom:0;
+    display: block;
+  
+}
+
+@media only screen and (max-width: 360px) {
+    .ofertas, 
+    .tienda, 
+    .vender, 
+    .ayuda, 
+    .cuenta,
+    .ingresa,
+    .compras {
+        display: none;
+    }
+}
+
+
