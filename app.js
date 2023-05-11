@@ -5,7 +5,7 @@ const path = require("path");
 app.use(express.static("public"));
 
 const port = process.env.PORT || 3000;
-app.listen(port,()=>console.log('servidor corriendo en el puerto 3000}'));
+app.listen(port,()=>console.log('servidor corriendo en el puerto +{port}'));
 
 //app.listen(process.env.PORT || 3000, () => console.log("SERVIDOR FUNCIONANDO EN EL PUERTO 3000 "));
 
