@@ -1,0 +1,16 @@
+Estos son los datos para mercadoliebre 
+
+Amarillo #EAC926;
+Azul #03264C;
+Celeste #1259c3;
+Gris oscuro #666;
+Gris calro #ebebeb;
+Verde #39b54a;
+
+
+
+Consultas a los profes: 
+
+1- Porque el header no me ocupa todo el ancho.
+2- En el ejercicio para que no muestre la descripción lo que hice fue que cambie de color nada mas que eso nose si esta bien. 
+3- Porque el copyright no le puedo sacar el 4 cuadrado o como hago paara sacarlo y que me centre lo otro. Lo debria poner en otro div 

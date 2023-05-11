@@ -1,196 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/forms.css">  
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <title>Document</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto+Condensed:ital,wght@0,300;1,400&family=Tilt+Prism&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
-    <script src="https://kit.fontawesome.com/8def7635c6.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-
-    <header class="main-header">
-        <div class="main-header-top-bar">
-
-            <div class="logo-boton-contenedor">
-                <img src="/images/logo-mercado-liebre.svg" class="logo">
-
-                <div class="boton">
-                    <button>Buscar productos, marcas</button>
-                    <button>
-                        <div class="busqueda"><i class="fa-solid fa-magnifying-glass"></i></div>
-                    </button>
-                </div>
+    <header>
+        <div class="main-header">
+            <div class="main-header-mobile">
+                <img src="./images/logo-mercado-liebre.svg" alt="Logo mercadoliebre" height="50px">
             </div>
-
-
-            <h2 class="copy-header">
-                <i class="fa-solid fa-hand-holding-dollar"></i>
-                Compra en cuotas y sin tarjetas de credito
-            </h2>
+            <div class="search-bar">
+                <input type="text" value="Buscar productos, marcas, etc" name="nombredelacaja" size="0.4hw" >
+                <button type="submit" class="boton-busqueda"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+        <div>
+            <h3><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</h3>
         </div>
 
-        <a href="#" class="burger-menu">
-            <i class="fa-solid fa-bars"></i>
-        </a>
-
-        <nav class="main-navbar">
+        <div class="nav-bar">
             <ul class="left-navbar">
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Tiendas Oficiales</a></li>
-                <li><a href="#">Vender</a></li>
-                <li><a href="#">Ayuda</a></li>
+                <li><a href="#"> Ofertas</a></li>
+                <li><a href="#"> Tiendas Oficiales</a></li>
+                <li><a href="#"> Tiendas Oficiales</a></li>
+                <li><a href="#"> Vender</a></li>
+                <li><a href="#"> Ayuda</a></li>
             </ul>
-
-
-            <ul class="right-navbar">
-                <li><a href="register.html">Crea Tu Cuenta <i class="fa-regular fa-credit-card"></i></a></li>
-                <li><a href="login.html">Ingresa <i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
-                <li><a href="#">Mis Compras <i class="fa-solid fa-basket-shopping"></i></a></li>
-
+            <ul class="log-in-nav-bar">
+                <li><a href="/register"> Creá tu Cuenta</a><i class="fa-solid fa-envelope"></i></li>
+                <li><a href="/login"> Ingresa</a><i class="fa-solid fa-right-to-bracket"></i></li>
+                <li><a href="#"> Mís Compras</a><i class="fa-solid fa-cart-shopping"></i></li>
             </ul>
-        </nav>
-        <div class="banner"><img src="/images/img-home-banner.jpg" width="100%"></div>
+        </div>   
 
-
-
-
-
-
+            <i class="fas fa-bars"></i>
+       
+    
     </header>
 
-    <main>
-        <h3 class="titulares">Basado en tu ultima visita</h3>
+    <main class="register">
 
-        <div class="articulos">
-
-            <div class="contenedor">
-                <div class="imagen"><img src="/images/img-cafetera-moulinex.jpg" width="40%"></div>
-                <div class="Cafetera">
-                    <div class="logo-envio"><i class="fa-solid fa-truck" style="color: #39b54a;"></i></div>
-                    <div class="precios-descuentos">
-                        <p class="precios">$6.770</p>
-                        <p class="descuentos">40% OFF</p>
-                    </div>
-                    <p class="descripciones">Cafetera Moulinex</p>
-                </div>
+        <form action="/registro" method="POST" class="registro"> 
+            <div class="carga-formulario-registro">
+                <label for="nombreApellido">Nombre y apellido:</label>
+                <input type="text" name="nombreApellido" id="nombreApellido" placeholder="Nombre y Apellido" required minlength="8" maxlength="20">
+            </div> 
+            <div class="carga-formulario-registro">
+                <label for="nombreUsuario">Nombre de usuario:</label>
+                <input type="text" name="nombreUsuario" id="nombreUsuario" placeholder="Nombre de usuario" required minlength="5" maxlength="10">
+            </div> 
+            <div class="carga-formulario-registro">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
             </div>
-
-            <div class="contenedor">
-                <div class="imagen"><img src="/images/img-macbook-pro-2019.jpg" width="40%"></div>
-                <div class="Mac">
-                    <div class="logo-envio"><i class="fa-solid fa-truck" style="color: #39b54a;"></i></div>
-                    <div class="precios-descuentos">
-                        <p class="precios">$230.000</p>
-                        <p class="descuentos">20% OFF</p>
-                    </div>
-                    <p class="descripciones">MacBook Pro 2019</p>
-                </div>
+            <div class="carga-formulario-registro">
+                <label for="fechaNacimiento">Fecha de nacimiento:</label>
+                <input type="date" name="fechaNacimiento" id="fechaNacimiento" placeholder="mm/dd/yyyy" required>
             </div>
-
-            <div class="contenedor">
-                <div class="imagen"><img src="/images/img-samsung-galaxy-s10.jpg" width="40%"></div>
-                <div class="Samsung">
-                    <div class="logo-envio"><i class="fa-solid fa-truck" style="color: #39b54a;"></i></div>
-                    <div class="precios-descuentos">
-                        <p class="precios">$70.500</p>
-                        <p class="descuentos">10% OFF</p>
-                    </div>
-                    <p class="descripciones">Samsung Galaxy S10</p>
-                </div>
+            <div class="carga-formulario-registro">
+                <label for="domicilio">Domicilio:</label>
+                <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" required>
+            </div> 
+            <div class="carga-formulario-registro">
+                <label for="perfilUsusario">Perfíl de ususario:</label>
+                <label for="perfilUsusario"></label><input type="radio" name="perfilUsusario" id="perfilUsusario" value="comprador"> Comprador <input type="radio" name="perfilUsusario" id="perfilUsusario" value="comprador"> Vendedor </label>
             </div>
-
-            <div class="contenedor">
-                <div class="imagen"><img src="/images/img-tv-samsung-smart.jpg" width="40%"></div>
-                <div class="Tv">
-                    <div class="logo-envio"><i class="fa-solid fa-truck" style="color: #39b54a;"></i></div>
-                    <div class="precios-descuentos">
-                        <p class="precios">$23.200</p>
-                        <p class="descuentos">5% OFF</p>
-                    </div>
-                    <p class="descripciones">SmartTv Samsung 43"</p>
-                </div>
+            <div class="carga-formulario-registro">
+                <label for="categorias">Categorías:</label>
+                <label><input type="checkbox" value="Electro"> Electro </label>
+                <label><input type="checkbox" value="Moda"> Moda </label>
+                <label><input type="checkbox" value="Hogar"> Hogar </label>
+                <label><input type="checkbox" value="Jugueteria"> Juguetería </label>
+                <label><input type="checkbox" value="Vida-Sana"> Vida Sana </label>
             </div>
-
-            <h3 class="titulares">Seccion de Ofertas</h3>
-
-            <div class="contenedor2">
-                <div class="imagen"><img src="/images/img-cafetera-moulinex.jpg" width="40%"></div>
-                <div class="Cafetera">
-                    <div class="logo-envio"><i class="fa-solid fa-truck" style="color: #39b54a;"></i></div>
-                    <div class="precios-descuentos">
-                        <p class="precios">$6.770</p>
-                        <p class="descuentos">40% OFF</p>
-                    </div>
-                    <p class="descripciones">Cafetera Moulinex</p>
-                </div>
+            <div class="carga-formulario-registro">
+                <label> Cargar tu foto de perfil <input type="file" name="fotoUsuario" accept=".jpg, .png"></label>
             </div>
-
-
-            <div class="contenedor2">
-                <div class="imagen"><img src="/images/img-macbook-pro-2019.jpg" width="40%"></div>
-                <div class="Mac">
-                    <div class="logo-envio"><i class="fa-solid fa-truck" style="color: #39b54a;"></i></div>
-                    <div class="precios-descuentos">
-                        <p class="precios">$230.000</p>
-                        <p class="descuentos">20% OFF</p>
-                    </div>
-                    <p class="descripciones">MacBook Pro 2019</p>
-                </div>
-            </div>
-
-            <div class="contenedor2">
-                <div class="imagen"><img src="/images/img-samsung-galaxy-s10.jpg" width="40%"></div>
-                <div class="Samsung">
-                    <div class="logo-envio"><i class="fa-solid fa-truck" style="color: #39b54a;"></i></div>
-                    <div class="precios-descuentos">
-                        <p class="precios">$70.500</p>
-                        <p class="descuentos">10% OFF</p>
-                    </div>
-                    <p class="descripciones">Samsung Galaxy S10</p>
-                </div>
-            </div>
-
-            <div class="contenedor2">
-                <div class="imagen"><img src="/images/img-tv-samsung-smart.jpg" width="40%"></div>
-                <div class="Tv">
-                    <div class="logo-envio"><i class="fa-solid fa-truck" style="color: #39b54a;"></i></div>
-                    <div class="precios-descuentos">
-                        <p class="precios">$23.200</p>
-                        <p class="descuentos">5% OFF</p>
-                    </div>
-                    <p class="descripciones">SmartTv Samsung 43"</p>
-                </div>
-            </div>
-        </div>
+            <div class="carga-formulario-registro">
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" name="contraseña" id="contraseña" required minlength="5" maxlength="10">
+            </div> 
+            <div class="carga-formulario-registro">
+                <label for="contraseña">Confirmar contraseña:</label>
+                <input type="password" name="contraseña" id="contraseña" required minlength="5" maxlength="10">
+            </div> 
+            
+            <button type="submit" class="boton-formulario">Enviar</button>
+            <button type="reset" class="boton-formulario">Borrar datos</button>
+        
+        </form>
     </main>
 
     <footer>
-        <i class="fa-solid fa-credit-card" style="color: #1161b6"></i>
-        <h4 class="titulares">Paga Con tarjeta o en efectivo</h4>
-        <p class="descripciones">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
-            puntos de pago. ¡Y siempre es seguro!</p>
+        <div class="footer-top"> 
+    
+            <div class="tarjeta-credito">
+                <i class="fa-solid fa-credit-card"></i>
+                <h3>Pagá con tarjeta o en efectivo</h3>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                    puntos de pago. ¡Y siempre es seguro!</p>
+            </div>
 
-        <i class="fa-solid fa-gift" style="color:#1161b6; "></i>
-        <h4 class="titulares"> Envio gratis desde $2.500</h4>
-        <p class="descripciones">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
-            productos. Es un beneficio de Mercado Puntos.</p>
+            <div class="envios">
+                <i class="fa-solid fa-boxes-packing"></i>
+                <h3>Envío gratis desde $ 2.500</h3>
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de Mercado Puntos.</p>
+            </div>
 
-        <i class="fa-solid fa-user-shield" style="color: #1161b6;"></i>
-        <h4 class="titulares"> Seguridad de principio a fin</h4>
-        <p class="descripciones">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
-            porque estás siempre protegid@.</p>
+            <div class="shield">
+                <i class="fa-solid fa-user-shield"></i>
+                <h3>Seguridad, de principio a fin</h3>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                    porque estás siempre protegida.</p>
+            </div>
+        </div>
 
+        <h4 class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
+        
     </footer>
-    <h5 class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</h5>
+
+    
+
 </body>
-
-</html>
-
 </html>
