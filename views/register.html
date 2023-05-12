@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/forms.css">  
+    <link rel="stylesheet" href="/css/forms.css">
     <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <div class="main-header">
@@ -18,7 +22,7 @@
                 <img src="./images/logo-mercado-liebre.svg" alt="Logo mercadoliebre" height="50px">
             </div>
             <div class="search-bar">
-                <input type="text" value="Buscar productos, marcas, etc" name="nombredelacaja" size="0.4hw" >
+                <input type="text" value="Buscar productos, marcas, etc" name="nombredelacaja" size="0.4hw">
                 <button type="submit" class="boton-busqueda"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
         </div>
@@ -39,24 +43,26 @@
                 <li><a href="/login"> Ingresa</a><i class="fa-solid fa-right-to-bracket"></i></li>
                 <li><a href="#"> Mís Compras</a><i class="fa-solid fa-cart-shopping"></i></li>
             </ul>
-        </div>   
+        </div>
 
-            <i class="fas fa-bars"></i>
-       
-    
+        <i class="fas fa-bars"></i>
+
+
     </header>
 
     <main class="register">
 
-        <form action="/registro" method="POST" class="registro"> 
+        <form action="/registro" method="POST" class="registro">
             <div class="carga-formulario-registro">
                 <label for="nombreApellido">Nombre y apellido:</label>
-                <input type="text" name="nombreApellido" id="nombreApellido" placeholder="Nombre y Apellido" required minlength="8" maxlength="20">
-            </div> 
+                <input type="text" name="nombreApellido" id="nombreApellido" placeholder="Nombre y Apellido" required
+                    minlength="8" maxlength="20">
+            </div>
             <div class="carga-formulario-registro">
                 <label for="nombreUsuario">Nombre de usuario:</label>
-                <input type="text" name="nombreUsuario" id="nombreUsuario" placeholder="Nombre de usuario" required minlength="5" maxlength="10">
-            </div> 
+                <input type="text" name="nombreUsuario" id="nombreUsuario" placeholder="Nombre de usuario" required
+                    minlength="5" maxlength="10">
+            </div>
             <div class="carga-formulario-registro">
                 <label for="email">Correo electrónico:</label>
                 <input type="email" name="email" id="email" placeholder="Email" required>
@@ -68,10 +74,12 @@
             <div class="carga-formulario-registro">
                 <label for="domicilio">Domicilio:</label>
                 <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" required>
-            </div> 
+            </div>
             <div class="carga-formulario-registro">
                 <label for="perfilUsusario">Perfíl de ususario:</label>
-                <label for="perfilUsusario"></label><input type="radio" name="perfilUsusario" id="perfilUsusario" value="comprador"> Comprador <input type="radio" name="perfilUsusario" id="perfilUsusario" value="comprador"> Vendedor </label>
+                <label for="perfilUsusario"></label><input type="radio" name="perfilUsusario" id="perfilUsusario"
+                    value="comprador"> Comprador <input type="radio" name="perfilUsusario" id="perfilUsusario"
+                    value="comprador"> Vendedor </label>
             </div>
             <div class="carga-formulario-registro">
                 <label for="categorias">Categorías:</label>
@@ -87,21 +95,21 @@
             <div class="carga-formulario-registro">
                 <label for="contraseña">Contraseña:</label>
                 <input type="password" name="contraseña" id="contraseña" required minlength="5" maxlength="10">
-            </div> 
+            </div>
             <div class="carga-formulario-registro">
                 <label for="contraseña">Confirmar contraseña:</label>
                 <input type="password" name="contraseña" id="contraseña" required minlength="5" maxlength="10">
-            </div> 
-            
+            </div>
+
             <button type="submit" class="boton-formulario">Enviar</button>
             <button type="reset" class="boton-formulario">Borrar datos</button>
-        
+
         </form>
     </main>
 
     <footer>
-        <div class="footer-top"> 
-    
+        <div class="footer-top">
+
             <div class="tarjeta-credito">
                 <i class="fa-solid fa-credit-card"></i>
                 <h3>Pagá con tarjeta o en efectivo</h3>
@@ -125,10 +133,11 @@
         </div>
 
         <h4 class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
-        
+
     </footer>
 
-    
+
 
 </body>
+
 </html>
